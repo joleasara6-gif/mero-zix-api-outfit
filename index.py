@@ -6,7 +6,7 @@ from concurrent.futures import ThreadPoolExecutor
 import os
 
 app = Flask(__name__)
-main_key = "MERO&ZIX"
+main_key = "mero"
 executor = ThreadPoolExecutor(max_workers=99)
 
 # Lấy thông tin người chơi
