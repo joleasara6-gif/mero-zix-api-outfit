@@ -11,7 +11,7 @@ executor = ThreadPoolExecutor(max_workers=10)
 
 # Lấy thông tin người chơi
 def fetch_player_info(uid, region):
-    url = f'https://nr-codex-info1.vercel.app/player-info?uid={uid}&region={region}'
+    url = f'https://yasser-api-info-yr.vercel.app/player-info?uid=(uid)&region={region}'
     response = requests.get(url)
     return response.json() if response.status_code == 200 else None
 
